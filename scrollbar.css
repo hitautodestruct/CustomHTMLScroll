@@ -1,0 +1,7 @@
+.scrollBar
+{
+	width:10px;	
+	border-radius:5px;
+	background-color: #888;
+	transition: opacity 0.3s linear;
+}
