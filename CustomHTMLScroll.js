@@ -83,12 +83,6 @@ function CustomHTMLScroll( content )
 		scrollPaneHeight = scrollPane.offsetHeight;
 		scrollTopMax = content.scrollHeight - viewportHeight;
 		scrollBarHeight = calculateScrollbarHeight();
-		
-		console.log( viewportHeight );
-		console.log( scrollPaneHeight );
-		console.log( scrollTopMax );
-		console.log( scrollBarHeight );
-		
 	}	
 	
 	function calculateScrollbarHeight()
@@ -103,9 +97,6 @@ function CustomHTMLScroll( content )
 		scrollBar = addElement( scrollPane, "div" );
 		scrollBar.className = "scrollBar";	
 		scrollBar.style.position="absolute";
-		
-		console.log(  );
-		
 		
 		scrollBar.style.left = content.offsetWidth - scrollBar.offsetWidth - scrollBarMargins + "px";
 		scrollBar.style.top = scrollBarMargins + "px";
@@ -246,9 +237,7 @@ function CustomHTMLScroll( content )
 	{
 	    if( node.nodeType != 1 )
 	    	return;
-	    
-	    console.log( value );
-	    
+	       
 	    if( value )
 	    	node.removeAttribute("unselectable");
 	    else	    		
