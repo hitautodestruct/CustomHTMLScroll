@@ -19,10 +19,11 @@
  * davidmaes@outlook.com
  */
 
-Element.prototype.addCustomHTMLScroll = function()
-{	var customScroll = CustomHTMLScroll( this );	
+var addCustomHTMLScroll = function( element )
+{
+	var customScroll = CustomHTMLScroll( element );	
 	customScroll.setup();
-}
+};
 
 function CustomHTMLScroll( content )
 {
